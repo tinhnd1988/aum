@@ -1124,6 +1124,44 @@ div.using:hover .overlay{
 	color: #FFF;
 	padding: 5px 10px;
 }
+.faq-left ul, 
+.faq-right ul {
+  list-style: none;
+  padding: 0px;
+}
+.faq-left ul li {
+  padding: 10px 0px 10px 85px;
+}
+.faq-left ul li:before{
+  content: '\f007';
+  left: 0;
+  font-family: FontAwesome;
+  position: absolute;
+  background: #E97926;
+  padding: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  font-size: 30px;
+  color: #FFF;
+}
+.faq-left-item p, .faq-right {
+  text-align: left;
+  font-size: 14px;
+}
+.faq-left ul li p.faq-q {
+  font-weight: 700;
+}
+.faq-right ul li{
+  border-top: 1px solid #ccc;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.faq-right ul div {
+    padding: 0px 15px 0px 30px;
+    line-height: 1.2;
+}
 /* =Modifying (Responsive)
 ----------------------------------------------- */
 /*MAX-WIDTH*/

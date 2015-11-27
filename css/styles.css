@@ -149,7 +149,7 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #B2A8A6;
   border-radius: 3px;
 }
 input[type="text"]:focus,
@@ -165,7 +165,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px;
+  padding: 3px 15px;
 }
 textarea {
   overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -1210,6 +1210,92 @@ div.using:hover .overlay{
   height: 100%;
   overflow: hidden;
 }
+#footer .contact{
+  padding: 0;
+}
+#footer .contact .inner{
+  background: url(../img/img-contact-bg.jpg) no-repeat left top;
+  background-size: cover;
+  min-height: 450px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;  
+}
+#footer .contact .inner .contact-wrap {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #000;
+    margin: 30px 15px;
+    padding: 0px 15px 15px 15px;
+    line-height: 1.2;
+}
+#footer .contact .contact-wrap h2{
+  font-weight: bold;
+  color: #E97926;
+}
+#footer .contact .contact-wrap .footer-text-tks{
+  border-bottom: 1px solid #666;
+  padding-bottom: 10px;  
+}
+#footer .contact .contact-wrap input[type="text"],
+#footer .contact .contact-wrap input[type="email"],
+#footer .contact .contact-wrap textarea{
+  width: 100%;
+  border-radius: 0;
+}
+#footer .contact .contact-wrap textarea{
+  padding: 15px;
+  resize: none;
+}
+#footer .contact .contact-wrap button{
+  background-color: #E97926;
+  color: #FFF;
+  border: 0;
+  padding: 10px 15px;
+}
+#footer .social{
+  padding-bottom: 40px;
+}
+#footer .social .txt-connect{
+  text-transform: uppercase;
+}
+#footer .social .col-xs-2{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#footer .social .social-item img{
+  float: left;
+}
+#footer .social .social-item h4{
+  text-transform: uppercase;
+}
+#footer .social .social-item h4,
+#footer .social .social-item p{
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #000;
+}
+#footer .site-info{
+  background-color: #313233;
+  color: #CCC;
+  font-size: 14px;  
+  padding: 30px 15px 0px 15px;  
+}
+#footer .site-info .address{
+  border-bottom: 1px solid #666;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+#footer .site-info .copyright{
+  float: none;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 0;
+}
+#footer .site-info .bank-info{
+  text-align: right;
+}
 /* =Modifying (Responsive)
 ----------------------------------------------- */
 /*MAX-WIDTH*/
@@ -1220,6 +1306,10 @@ div.using:hover .overlay{
 	.col-featured-product{
 		width: 32%;
 	}
+  #footer .social .social-item h4, 
+  #footer .social .social-item p  {
+    display: none;
+  }
 }
 @media (max-width: 767px){
 	#logo{
@@ -1235,10 +1325,23 @@ div.using:hover .overlay{
 	.col-featured-product{
 		width: 100%;
 	}	
+  #footer .site-info .copyright,
+  #footer .site-info .bank-info{
+    text-align: center;
+  }
 }
 @media (max-width: 480px){
 	div.using,
 	.featured-product .thumbnail{
 		width: inherit;	
-	}	
+	}
+  #logo span.glyphicon {
+    padding-left: 0;
+  }
+  #logo img {
+    width: 120px;
+  }
+  #logo {
+    margin-top: 3.12500%;
+  }
 }

@@ -1111,11 +1111,11 @@ div.using:hover .overlay{
 	padding-top: 10px;
 }
 .featured-product .thumbnail > img{
-    position: absolute;
+  position: absolute;
 	max-width: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .featured-product button{
 	background-color: #E97926;
@@ -1161,6 +1161,54 @@ div.using:hover .overlay{
 .faq-right ul div {
     padding: 0px 15px 0px 30px;
     line-height: 1.2;
+}
+.title-aum.news{
+  background-color: #F4F4F4;
+}
+.news .news-item{
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.news .news-item .overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: 10;
+  opacity: 0.5;
+  display: none;
+}
+.news .news-item:hover .overlay{
+  display: block;
+  cursor: pointer;
+}
+.news .news-item img{
+  position: absolute;
+  max-width: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%; 
+}
+.news .news-item .news-desc{
+  position: absolute;
+  bottom: 0;
+  padding: 20px 15px 15px;
+  background-color: #FEB500;
+  text-align: left;
+  color: #FFF;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.news .news-item .news-desc p{
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden;
 }
 /* =Modifying (Responsive)
 ----------------------------------------------- */

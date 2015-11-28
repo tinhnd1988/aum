@@ -1101,8 +1101,9 @@ div.using:hover .overlay{
 	padding: 0 5%;
 }
 .col-featured-product{
-	width: 18.8%;
+	width: 17.3%;
 	display: inline-block;
+  margin: 0 1%;
 }
 .featured-product .thumbnail{
 	height: 250px;
@@ -1117,6 +1118,7 @@ div.using:hover .overlay{
 .featured-product .thumbnail > img{
   position: absolute;
 	max-width: none;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

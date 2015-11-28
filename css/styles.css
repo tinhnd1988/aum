@@ -1155,7 +1155,7 @@ div.using:hover .overlay{
   height: 350px;
   position: relative;
   overflow: hidden;
-  margin-top: 20px;
+  margin: 20px 10px 0;
 }
 .news .news-item .overlay{
   position: absolute;
@@ -1196,6 +1196,44 @@ div.using:hover .overlay{
   height: 100%;
   overflow: hidden;
 }
+.news #newsSliders .owl-prev, .news #newsSliders .owl-next{
+  position: absolute;
+  width: 21px;
+  height: 37px;
+  display: block;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 0;
+  color: transparent;
+  background: url(../img/arrow-prev.png) no-repeat;
+}
+.news #newsSliders .owl-next {
+  background-image: url(../img/arrow-next.png);
+  left: auto;
+  right: 20px;
+}
+
+#homeBanner .owl-prev, #homeBanner .owl-next{
+  position: absolute;
+  width: 33px;
+  height: 63px;
+  display: block;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 0;
+  color: transparent;
+  background: url(../img/big-arrow-prev.png) no-repeat;
+}
+#homeBanner .owl-next {
+  background-image: url(../img/big-arrow-next.png);
+  left: auto;
+  right: 20px;
+}
+
 #footer .contact{
   padding: 0;
 }

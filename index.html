@@ -6,10 +6,13 @@
 	<title>Trang chủ</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">	
 	<link rel="stylesheet" href="css/styles.css">
 
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- OWL -->
+	<script src="js/owl.carousel.min.js"></script>
 </head>
 <body class="home">
 	<div id="page">
@@ -24,7 +27,7 @@
 					</button>
 								
 					<div id="logo">
-						<a href="#"><img src="img/logo.png" width="140" alt="AUM Garlic"></a>
+						<a href="index.html"><img src="img/logo.png" width="140" alt="AUM Garlic"></a>
 						<span class="glyphicon glyphicon-earphone"></span> <span>090 888 6161</span>  
 					</div>		
 				</div>		
@@ -47,8 +50,8 @@
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Tin tức & sự kiện <span class="caret"></span></a>
 							<ul role="menu" class=" dropdown-menu">
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="#">Sự kiện</a></li>
+								<li><a href="thong-tin-y-khoa.html">Tin tức</a></li>
+								<li><a href="thong-tin-y-khoa.html">Sự kiện</a></li>
 							</ul>
 						</li>
 						<li>
@@ -76,7 +79,14 @@
 		<div class="cover-section">
 			<div class="container-fluid">
 				<div class="row">
-					<img src="img/img-cover.jpg" alt="home-cover">
+					<div id="homeBanner">
+						<a href="#" title="">
+							<img src="img/img-cover.jpg" alt="" />
+						</a>
+						<a href="#" title="">
+							<img src="img/img-cover.jpg" alt="" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -332,43 +342,63 @@
         		<div class="row title-aum news">
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<h2>Tin tức & sự kiện</h2>
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<div class="news-item">
-									<div class="overlay"></div>
-									<img src="img/news-1.jpg">
-									<div class="news-desc">
-										<p>Cung ứng và gia công cho các đối tác thương mại trong nước</p>
-									</div>
+						<div id="newsSliders">
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-1.jpg">
+								<div class="news-desc">
+									<p>Cung ứng và gia công cho các đối tác thương mại trong nước</p>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="news-item">
-									<div class="overlay"></div>
-									<img src="img/news-2.jpg">
-									<div class="news-desc">
-										<p>Quy trình chế biến tỏi đen ở nhà máy sản xuất</p>
-									</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-2.jpg">
+								<div class="news-desc">
+									<p>Quy trình chế biến tỏi đen ở nhà máy sản xuất</p>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="news-item">
-									<div class="overlay"></div>
-									<img src="img/news-3.jpg">
-									<div class="news-desc">
-										<p>Hướng dẫn kỹ thuật trồng tỏi đen ở Lý Sơn</p>
-									</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-3.jpg">
+								<div class="news-desc">
+									<p>Hướng dẫn kỹ thuật trồng tỏi đen ở Lý Sơn</p>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="news-item">
-									<div class="overlay"></div>
-									<img src="img/news-4.jpg">
-									<div class="news-desc">
-										<p>Công dụng tỏi đen mang đến lợi ích và sức khỏe cho con người</p>
-									</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-4.jpg">
+								<div class="news-desc">
+									<p>Công dụng tỏi đen mang đến lợi ích và sức khỏe cho con người</p>
 								</div>
-							</div>																					
+							</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-1.jpg">
+								<div class="news-desc">
+									<p>Cung ứng và gia công cho các đối tác thương mại trong nước</p>
+								</div>
+							</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-2.jpg">
+								<div class="news-desc">
+									<p>Quy trình chế biến tỏi đen ở nhà máy sản xuất</p>
+								</div>
+							</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-3.jpg">
+								<div class="news-desc">
+									<p>Hướng dẫn kỹ thuật trồng tỏi đen ở Lý Sơn</p>
+								</div>
+							</div>
+							<div class="news-item">
+								<div class="overlay"></div>
+								<img src="img/news-4.jpg">
+								<div class="news-desc">
+									<p>Công dụng tỏi đen mang đến lợi ích và sức khỏe cho con người</p>
+								</div>
+							</div>
 						</div>
 					</div>
         		</div>		
@@ -477,4 +507,19 @@
 		</div>
 	</div>
 </body>
+<script>
+	$(document).ready(function() {
+		$("#homeBanner").owlCarousel({
+		  	autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  	navigation : true,
+		  	items : 1,
+		});
+		$("#newsSliders").owlCarousel({
+		  	autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  	navigation : true,
+		  	items : 4,
+		});
+		
+	});	
+</script>
 </html>

@@ -3,17 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Thông tin y khoa</title>
+	<title>Danh mục sản phẩm</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">	
 	<link rel="stylesheet" href="css/styles.css">
 
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- OWL -->
+	<script src="js/owl.carousel.min.js"></script>
 </head>
-<body>
+<body class="category">
 	<div id="page">
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -33,16 +36,16 @@
 						<li>
 							<a href="index.html">Trang chủ</a>
 						</li>
-						<li class="dropdown">
+						<li class="dropdown active">
 							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Sản phẩm <span class="caret"></span></a>
 							<ul role="menu" class=" dropdown-menu">
-								<li><a href="danh-muc-san-pham.html">Danh mục sản phẩm</a></li>			
+								<li class="active"><a href="danh-muc-san-pham.html">Danh mục sản phẩm</a></li>
 								<li><a href="san-pham.html">Cô đơn nguyên vỏ - hộp 250 g</a></li>
 								<li><a href="san-pham.html">Cô đơn nguyên vỏ -hủ 350 g</a></li>
 								<li><a href="san-pham.html">Cô đơn nguyên vỏ- lon 175 g</a></li>
 								<li><a href="san-pham.html">Cộ đơn bóc vỏ- hủ 500 g</a></li>
 								<li><a href="san-pham.html">Cô đơn nguyên vỏ- túi 125 g</a></li>
-								<li><a href="san-pham.html">Cô đơn nguyên vỏ- hộp 500 g</a></li>	
+								<li><a href="san-pham.html">Cô đơn nguyên vỏ- hộp 500 g</a></li>			
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -55,8 +58,8 @@
 						<li>
 							<a href="thong-tin-y-khoa.html">Thông tin y khoa</a>
 						</li>
-						<li class="active">
-							<a href="#">Liên hệ</a>
+						<li>
+							<a href="lien-he.html">Liên hệ</a>
 						</li>
 						<li>
 							<a class="fa fa-key" href="/"></a>
@@ -74,7 +77,62 @@
 				</div>
 			</div>
 		</nav>
-		<div id="content">		
+		<div id="content" class="site-content container">		
+        	<div id="primary" class="content-area col-sm-12">	
+				<h1 class="page-title">Tỏi đen  AUM - Giảm Cholesterol</h1>
+				<ul class="container row products">
+					<li class="product col-sm-6 col-md-4">
+						<a href="san-pham.html">
+							<div class="product-img">
+								<img src="img/product-1.jpg">
+							</div>
+							<h3>Tỏi đen  AUM 1</h3>
+							<span class="price"><span class="amount">440,000₫</span></span>
+						</a>
+						<a href="san-pham.html" class="btn btn-default add_to_cart_btn btn-default product_type_variable">ĐẶT HÀNG</a>
+					</li>
+					<li class="product col-sm-6 col-md-4">
+						<a href="san-pham.html">
+							<div class="product-img">
+								<img src="img/product-2.jpg">
+							</div>
+							<h3>Tỏi đen  AUM 2</h3>
+							<span class="price"><span class="amount">440,000₫</span></span>
+						</a>
+						<a href="san-pham.html" class="btn btn-default add_to_cart_btn btn-default product_type_variable">ĐẶT HÀNG</a>
+					</li>
+					<li class="product col-sm-6 col-md-4">
+						<a href="san-pham.html">
+							<div class="product-img">
+								<img src="img/product-3.jpg">
+							</div>
+							<h3>Tỏi đen  AUM 3</h3>
+							<span class="price"><span class="amount">440,000₫</span></span>
+						</a>
+						<a href="san-pham.html" class="btn btn-default add_to_cart_btn btn-default product_type_variable">ĐẶT HÀNG</a>
+					</li>
+					<li class="product col-sm-6 col-md-4">
+						<a href="san-pham.html">
+							<div class="product-img">
+								<img src="img/product-4.jpg">
+							</div>
+							<h3>Tỏi đen  AUM 4</h3>
+							<span class="price"><span class="amount">440,000₫</span></span>
+						</a>
+						<a href="san-pham.html" class="btn btn-default add_to_cart_btn btn-default product_type_variable">ĐẶT HÀNG</a>
+					</li>
+					<li class="product col-sm-6 col-md-4">
+						<a href="san-pham.html">
+							<div class="product-img">
+								<img src="img/product-5.jpg">
+							</div>
+							<h3>Tỏi đen  AUM 5</h3>
+							<span class="price"><span class="amount">440,000₫</span></span>
+						</a>
+						<a href="san-pham.html" class="btn btn-default add_to_cart_btn btn-default product_type_variable">ĐẶT HÀNG</a>
+					</li>																				
+				</ul>
+			</div>	
 		</div>
 		<div id="footer">
 			<div class="contact container">
@@ -179,4 +237,19 @@
 		</div>
 	</div>
 </body>
+<script>
+	$(document).ready(function() {
+		$("#homeBanner").owlCarousel({
+		  	autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  	navigation : true,
+		  	items : 1,
+		});
+		$("#newsSliders").owlCarousel({
+		  	autoPlay: 3000, //Set AutoPlay to 3 seconds
+		  	navigation : true,
+		  	items : 4,
+		});
+		
+	});	
+</script>
 </html>

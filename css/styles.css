@@ -497,12 +497,12 @@ li.recentcomments {
 /* =Buttons
 ----------------------------------------------- */
 .btn-default, .label-default {
-  background-color: #1FA67A;
-  border-color: #1FA67A;
+  background-color: #E97926;
+  border-color: #E97926;
 }
 .btn-default:hover, .label-default[href]:hover, .label-default[href]:focus, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover {
-  background-color: #1b926c;
-  border-color: #1b926c;
+  background-color: #FEB500;
+  border-color: #FEB500;
 }
 .btn.btn-default {
     color: #FFF;
@@ -1056,6 +1056,7 @@ div.using img{
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
+  z-index: -1;
 }
 div.using .overlay{
 	display: none;
@@ -1069,6 +1070,7 @@ div.using .overlay{
   background: #FFF;
   z-index: 10;
   opacity: 0.5;	
+  border-radius: 50%;
 }
 div.using:hover .overlay{
 	display: block;
@@ -1516,6 +1518,42 @@ div.using:hover .overlay{
     top: 0;
     position: absolute;
     left: 0;
+}
+.category ul.products {
+  list-style: none;
+}
+.category ul.products li.product {
+  text-align: center;
+  padding: 15px;
+}
+.category ul.products li.product:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+.category ul.products li.product:hover .product-img img{
+  transform: scale(1.2);
+}
+.category ul.products li.product .product-img{
+  height: 240px;
+  width: auto;
+  overflow: hidden;
+}
+.category ul.products li.product .product-img img{
+  transform: translateZ(0px);
+  transition-duration: 500ms; 
+  transition-property: transform;
+}
+.category ul.products li.product h3{
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.category ul.products li.product .price {
+  color: #E97926;
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
 }
 /* =Modifying (Responsive)
 ----------------------------------------------- */

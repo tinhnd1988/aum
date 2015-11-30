@@ -1010,24 +1010,23 @@ a.menu-cart-order {
     padding: 5px 10px !important;
 }
 ul#menu-top-menu li.expand-search {
-    width: 50px;
+    width: 34px;
     height: 50px;
 }
-ul#menu-top-menu li.expand-search:hover {
+ul#menu-top-menu li.expand-search form .text_search:hover {
   background-color: #E97926;
 }
-ul#menu-top-menu li.expand-search form:before {
+ul#menu-top-menu li.expand-search form:before{
   content: '\f084';
   font-family: FontAwesome;
   position: absolute;
   z-index: 10;
-    top: 25%;
-    left: 3.1250%;
-    color: #FFF;  
+  top: 25%;
+  left: 10px;
+  color: #FFF;  
 }
 ul#menu-top-menu li .text_search{
     background-color: transparent;
-    background-image: url(img/searchicon.png);
     background-position: 5px center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -1042,7 +1041,7 @@ ul#menu-top-menu li .text_search{
     width: 0;
 }
 ul#menu-top-menu li .text_search:focus {
-    background-color: #fff;
+    background-color: #fff !important;
     border: 1px solid black !important;
     cursor: text;
     outline: 0;

@@ -1267,7 +1267,7 @@ div.using:hover .overlay{
   left: auto;
   right: 20px;
 }
-
+#homeBanner .owl-item img {width: 100%;}
 #homeBanner .owl-prev, #homeBanner .owl-next{
   position: absolute;
   width: 33px;

@@ -1467,8 +1467,11 @@ div.using:hover .overlay{
 .product .reviews .nav-tabs li a{
   font-weight: bold;
 }
-.product .reviews #reviews-content{
+.product .reviews .tab-pane{
   border: 0;
+}
+.product .reviews .tab-pane .content{
+  padding: 20px;
 }
 .product .reviews #comments h2{
   margin: 0;

@@ -1009,6 +1009,22 @@ a.menu-cart-order {
     margin: 12.5% 5px 0 5px;
     padding: 5px 10px !important;
 }
+ul#menu-top-menu li.expand-search {
+    width: 50px;
+    height: 50px;
+}
+ul#menu-top-menu li.expand-search:hover {
+  background-color: #E97926;
+}
+ul#menu-top-menu li.expand-search form:before {
+  content: '\f084';
+  font-family: FontAwesome;
+  position: absolute;
+  z-index: 10;
+    top: 25%;
+    left: 3.1250%;
+    color: #FFF;  
+}
 ul#menu-top-menu li .text_search{
     background-color: transparent;
     background-image: url(img/searchicon.png);
@@ -1034,7 +1050,6 @@ ul#menu-top-menu li .text_search:focus {
     max-width: 300px !important;
     padding-left: 35px;
     border-radius: 4px !important;
-    z-index: 100;
 }
 ul#menu-top-menu li input.btn_search_form {
     display: none;

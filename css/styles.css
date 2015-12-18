@@ -597,15 +597,18 @@ li.recentcomments {
   text-align: right;
 }
 .navbar.navbar-default {
-  background-color: #FEB500;
+  background-color: #FFF;
   font-weight: 200;
   margin-bottom: 0;
   margin-top: -2px;
   /*border-bottom: 1px solid #eee;*/
 }
 .navbar-default .navbar-nav > li > a {
-  color: #FFF;
+  color: #333;
   line-height: 1;
+  padding: 10px;
+  margin-top: 8px;
+  text-transform: capitalize;
 }
 .navbar > .container .navbar-brand {
   color: #1FA67A;
@@ -636,8 +639,9 @@ li.recentcomments {
 .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-  color: #fff;
+  color: #FFF;
   background-color: #E97926;
+  border-radius: 5px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #fff;
@@ -1003,11 +1007,12 @@ ul#menu-top-menu li a{
 	padding-right: 10px;
 }
 a.menu-cart-order {
-    background: #E97926;
-    color: #fff !important;
+    /*background: #E97926;*/
+    /*color: #333 !important;*/
     text-transform: uppercase;
-    margin: 12.5% 5px 0 5px;
+    margin: 12.5% 5px 0 5px !important;
     padding: 5px 10px !important;
+    border-radius: 5px;
 }
 ul#menu-top-menu li.expand-search {
     width: 34px;
@@ -1015,6 +1020,7 @@ ul#menu-top-menu li.expand-search {
 }
 ul#menu-top-menu li.expand-search form .text_search:hover {
   background-color: #E97926;
+  border-radius: 5px;
 }
 /*ul#menu-top-menu li.expand-search form:before{
   content: '\f084';
@@ -1028,7 +1034,7 @@ ul#menu-top-menu li.expand-search form .text_search:hover {
 ul#menu-top-menu li .text_search{
     background-color: transparent;
     background-image: url(../img/searchicon.png);
-    background-position: 10px center;
+    background-position: -15px center;
     background-repeat: no-repeat;
     background-size: 40px;
     border: none;
@@ -1063,10 +1069,34 @@ ul#menu-top-menu li .form-search {
 ul#menu-top-menu li .form-search input{
     max-width: 180px;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
+}
+ul#menu-top-menu .dropdown-menu{
+  background-color: transparent;
+}
+ul#menu-top-menu .dropdown-menu li:first-child a{
+  border-radius: 5px 5px 0 0;
+}
+ul#menu-top-menu .dropdown-menu li:last-child a{
+  border-radius: 0 0 5px 5px;
 }
 .cover-section{
-	margin-top: 45px;
+	padding: 75px 0 25px;
+  background: #DDDDDD; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#FAFAFA, #DDDDDD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FAFAFA, #DDDDDD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FAFAFA, #DDDDDD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FAFAFA, #DDDDDD); /* Standard syntax */  
+}
+.cover-section > .container > .row > div:last-child img{
+  width: 100%;
+}
+.cover-section .cover-logo-fone div{
+  float: none;
+  text-align: center;
+}
+.cover-section .cover-logo-fone .fone{
+  font-size: 20px;
 }
 .title-aum {
     text-align: center;
@@ -1076,18 +1106,18 @@ ul#menu-top-menu li .form-search input{
 }
 .title-aum h1, .title-aum h2 {
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
 }
 .title-aum h4{
 	text-transform: uppercase;
 	min-height: 40px;
 	padding: 0 10px;
+  font-size: 17px;
   font-weight: bold;
 }
 .title-aum p {
-    font-size: 24px;
-    line-height: 1.3;
+    font-size: 15px;
 }
 div.using{
 	border-radius: 50%;
@@ -1130,8 +1160,8 @@ div.using:hover .overlay{
 	cursor: pointer;
 }
 .desc{
-	font-size: 16px;
-	line-height: 1;
+	font-size: 15px;
+	/*line-height: 1;*/
 	min-height: 90px;
 	padding: 0 5%;
 }
@@ -1625,10 +1655,6 @@ div.using:hover .overlay{
   #footer .social .social-item p  {
     display: none;
   }
-  ul#menu-top-menu li.expand-search,
-  ul#menu-top-menu li .form-search{
-    width: 100%;
-  }
 }
 @media (max-width: 767px){
 	#logo{
@@ -1657,6 +1683,14 @@ div.using:hover .overlay{
   ul#menu-top-menu ul.dropdown-menu li a  {
     padding-left: 25px;
   }
+  ul#menu-top-menu li.expand-search,
+  ul#menu-top-menu li .form-search{
+    width: 100%;
+  }
+  ul#menu-top-menu li .text_search:focus{
+    max-width: none !important;
+    width: 100% !important;
+  } 
 }
 @media (max-width: 480px){
 	div.using,
@@ -1671,5 +1705,26 @@ div.using:hover .overlay{
   }
   #logo {
     margin-top: 3.12500%;
+  }
+}
+/*MAX-WIDTH*/
+@media (min-width: 991px){
+  .cover-section > .container > .row {
+    padding: 0 15px; 
+  }
+  .cover-section > .container > .row > div{
+    display: table-cell;
+    float: none;
+    padding: 0;
+  }
+  .cover-section > .container > .row > div:last-child{
+    text-align: right;
+  }
+  .cover-section > .container > .row > div:last-child img{
+    width: auto;
+  }  
+  .cover-section .cover-logo-fone div{
+    padding: 0;
+    width: 90%;
   }
 }
